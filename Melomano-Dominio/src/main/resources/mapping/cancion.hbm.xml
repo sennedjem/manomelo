@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="melomano.dominio.Cancion" table="Cancion" >
+        <id name="idCancion" type="java.lang.Integer">
+            <column name="ID_CANCION" />
+            <generator class="identity" />
+        </id>
+        
+        <property name="nombre" column="Nombre" type="string" not-null="true" />
+        <property name="cancionIncompleta" column="CancionIncompleta" type="string" not-null="true" />
+        <property name="primeraPalabra" column="PrimeraPalabra" type="string" not-null="true" />
+        <property name="segundaPalabra" column="SegundaPalabra" type="string" not-null="true" />
+        <property name="palabraIncorrectaUno" column="PalabraIncorrectaUno" type="string" not-null="true" />
+        <property name="palabraIncorrectaDos" column="PalabraIncorrectaDos" type="string" not-null="true" />
+        <property name="primerPregunta" column="PrimerPregunta" type="string" not-null="true" />
+		<property name="respuestaReal" column="RespuestaReal" type="string" not-null="true" />
+ 		<property name="genero" column="Genero" type="string" not-null="true" />
+        
+ </class>
+</hibernate-mapping>
